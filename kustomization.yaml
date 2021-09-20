@@ -1,3 +1,4 @@
+namespace: your-namespace
 secretGenerator:
 - name: mysql-pass
   literals:

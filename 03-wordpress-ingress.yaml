@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: wordpress-ingress
+  namespace: your-namespace
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+spec:
+  rules:
+  - host: up2you.app00.kubeworkshop.inet.co.th
+    http:
+      paths:
+      - backend:
+          serviceName: service-name
+          servicePort: 80
